@@ -16,7 +16,7 @@ function exibirMsgInicial() {
 exibirMsgInicial();
 
 function verificarpalpite() {
-    let palpite = document.querySelector('input').value;
+    let palpite = parseInt(document.querySelector('input').value);
 
     if (palpite == numeroSecreto) {
         exibeTextoTela('h1', `Acertou!`);
@@ -25,18 +25,23 @@ function verificarpalpite() {
         let mensagemTentativas = `Você descobriu o número secreto com ${tentativas} ${palavraTentativas}.`;
 
         exibeTextoTela('p', mensagemTentativas);
-
         document.getElementById(`reiniciar`).removeAttribute(`disabled`);
+        document.getElementById(`chutar`).setAttribute(`disabled`, true);
     } else {
-        if (palpite > numeroSecreto) {
-            exibeTextoTela('p', `O número secreto é menor do que o palpite.`);
-        } else {
-            if (palpite < numeroSecreto) {
+        if (tentativas < 3) {
+            if (palpite > numeroSecreto) {
+                exibeTextoTela('p', `O número secreto é menor do que o palpite.`);
+            } else {
                 exibeTextoTela('p', `O número secreto é maior do que o palpite.`);
             }
+            tentativas++;
+            limparCampo();
+        } else {
+            exibeTextoTela('h1', `Fim de jogo!`);
+            exibeTextoTela('p', `O número secreto era ${numeroSecreto}.`);
+            document.getElementById(`reiniciar`).removeAttribute(`disabled`);
+            document.getElementById(`chutar`).setAttribute(`disabled`, true);
         }
-        tentativas++;
-        limparCampo();
     }
 }
 
@@ -46,6 +51,7 @@ function novoJogo() {
     tentativas = 1;
     exibirMsgInicial();
     document.getElementById(`reiniciar`).setAttribute(`disabled`, true);
+    document.getElementById(`chutar`).removeAttribute(`disabled`);
 }
 
 function gerarNumeroAleatorio() {
@@ -65,6 +71,6 @@ function gerarNumeroAleatorio() {
 }
 
 function limparCampo() {
-    palpite = document.querySelector('input');
+    let palpite = document.querySelector('input');
     palpite.value = ``;
 }
