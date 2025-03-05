@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Dia 4 - Exercícios</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+    <section class="main-pg">
+        <div class="modal-overlay" id="modalInicial">
+            <div class="modal">
+                <h2>Deseja iniciar uma lista de compras?</h2>
+                <button class="confirm" onclick="iniciarLista()">Sim</button>
+                <button class="cancel" onclick="fecharAplicacao()">Não</button>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="modalAlimento">
+            <div class="modal">
+                <h2>Digite um alimento para incluir à lista:</h2>
+                <input type="text" id="modalInputAlimento">
+                <br>
+                <button class="confirm" onclick="confirmarAlimento()">Ok</button>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="modalDepartamento">
+            <div class="modal">
+                <h2>Digite o departamento onde o alimento será incluído:</h2>
+                <input type="text" id="modalInputDepartamento">
+                <br>
+                <button class="confirm" onclick="confirmarDepartamento()">Ok</button>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="modalAdicionarMais">
+            <div class="modal">
+                <h2>Deseja adicionar mais um item?</h2>
+                <button class="confirm" onclick="adicionarMaisItem()">Sim</button>
+                <button class="cancel" onclick="fecharModalAdicionarMais()">Não</button>
+            </div>
+        </div>
+
+        <div id="listaDeCompras">
+            <h3>Lista de Compras:</h3>
+            <ul id="listaDepartamentos"></ul>
+        </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
