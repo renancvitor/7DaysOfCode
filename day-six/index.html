@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Dia 5 - Exercícios</title>
+    <title>Dia 6 - Exercícios</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
@@ -42,6 +42,16 @@
                 <h2>Deseja adicionar mais um item?</h2>
                 <button class="confirm" onclick="adicionarMaisItem()">Sim</button>
                 <button class="cancel" onclick="fecharModalAdicionarMais()">Não</button>
+                <button class="remove" onclick="abrirModalRemover()">Remover um item</button>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="modalRemoverItem">
+            <div class="modal">
+                <h2>Digite o nome do alimento que deseja remover:</h2>
+                <input type="text" id="modalInputRemover">
+                <br>
+                <button class="confirm" onclick="removerItem()">Remover</button>
             </div>
         </div>
 
