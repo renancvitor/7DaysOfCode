@@ -1,9 +1,9 @@
-# 🏆 #7DaysOfCode - Desafio [Alura](https://www.alura.com.br) 
+# 🏆 #7DaysOfCode - Desafio [alura](https://www.alura.com.br) 
 ![Status](https://img.shields.io/badge/Status-Concluído-green)
 
 ### ✅ Projeto concluído! ✅
 
-Este projeto faz parte do desafio #7DaysOfCode, uma iniciativa da [Alura](https://www.alura.com.br) para aprimorar habilidades de programação com desafios diários. Durante 7 dias consecutivos, recebi e-mails com propostas de exercícios em [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript), incorporando [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML) e [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS) para a estrutura e estilo da aplicação.
+Este projeto faz parte do desafio #7DaysOfCode, uma iniciativa da [alura](https://www.alura.com.br) para aprimorar habilidades de programação com desafios diários. Durante 7 dias consecutivos, recebi e-mails com propostas de exercícios em [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript), incorporando [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML) e [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS) para a estrutura e estilo da aplicação.
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -43,7 +43,7 @@ Abra o arquivo `index.html` do desafio escolhido em seu navegador para visualiza
 
 ## 📢 Agradecimento
 
-Agradeço à [Alura](https://www.alura.com.br) por essa oportunidade de aprendizado contínuo e por incentivar o desenvolvimento de habilidades de programação de forma estruturada e desafiadora. 🚀
+Agradeço à [alura](https://www.alura.com.br) por essa oportunidade de aprendizado contínuo e por incentivar o desenvolvimento de habilidades de programação de forma estruturada e desafiadora. 🚀
 
 ## 🤝 Contribuições
 
