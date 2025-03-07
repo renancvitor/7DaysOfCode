@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Dia 6 - Exercícios</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    
+    <section>
+        <div class="modal-overlay" id="modalSaudacao">
+            <div class="modal">
+                <h2>Seja muito bem-vindo à nossa calculadora!</h2>
+                <button class="confirm" onclick="iniciarAplicacao()">Continuar</button>
+                <button class="cancel" onclick="fecharAplicacao()">Sair</button>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="modalOperacao">
+            <div class="modal">
+                <h2>Qual operação você deseja realizar? Digite '+' para soma, digite '-' para subtração, digite '*' para multiplicação ou digite '/' para divisão. Para sair basta digitar 'sair'.</h2>
+                <input type="text" id="modalInputOperacao">
+                <br>
+                <button class="confirm" onclick="confirmarOperacao()">Ok</button>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="modalNumeros">
+            <div class="modal">
+                <h2>Digite os números da operação:</h2>
+                <input type="text" name="primeiroNumero" id="modalInputPrimeiroNumero">
+                <input type="text" name="segundoNumero" id="modalInputSegundoNumero">
+                <br>
+                <button class="confirm" onclick="confirmarNumeros()">Ok</button>
+            </div>
+        </div>
+
+        <div id="resultados">
+            <h3>Resultados</h3>
+            <ul id="listaResultados"></ul>
+        </div>     
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
